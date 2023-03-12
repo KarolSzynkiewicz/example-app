@@ -18,6 +18,4 @@ Route::get('/', function () {
 });
 
 
-Route::get('/wsl', function () {
-    return ('WSL!');
-});
+Route::resource('posts', 'App\Http\Controllers\PostsController');
